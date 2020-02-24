@@ -28,6 +28,18 @@ namespace webApiTokenAuthentication
             else if (context.UserName == "user" && context.Password == "user")
             {
                 identity.AddClaim(new Claim(ClaimTypes.Role, "user"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user1"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user2"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user3"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user4"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user5"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user6"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user7"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user8"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user9"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user10"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user11"));
+                identity.AddClaim(new Claim(ClaimTypes.Role, "user12"));
                 identity.AddClaim(new Claim("username", "user"));
                 identity.AddClaim(new Claim(ClaimTypes.Name, "Suresh Sha"));
                 context.Validated(identity);
